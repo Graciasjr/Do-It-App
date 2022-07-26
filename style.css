@@ -1,0 +1,76 @@
+body{
+    font-family: sans-serif;
+    background-color: #e5e5e5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.app{
+    width: 25%;
+    height: 80vh;
+    border: 2px solid rgb(70, 154, 70);
+    border-radius: 8px;
+    padding: 7px;
+    background-color:#fff ;
+    overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar { width: 0 !important }
+
+#addNew{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5% 5%;
+    background-color: rgb(94, 141, 94);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-plus{
+    background-color: rgb(32, 148, 32);
+    padding: 2% 3.5% ;
+    border-radius: 5%;
+}
+
+.task-app{
+   margin-left: 42.5%;
+    margin-top: 2%;    
+    text-decoration: underline;
+    
+    
+}
+
+#tasks{
+    display: grid;
+    gap: 14px;
+    /*border: 1px solid;*/
+}
+
+#tasks div{
+    width: 95%;
+    height: auto;
+    background-color:#e2eede;
+    border: 1.7px solid #abcea1;
+    padding: 2%;
+    border-radius: 4px;
+    display: grid;
+    gap: 3px;
+}
+
+.task-title{
+    font-weight: bold;
+}
+
+.date{font-size: 0.7vw; color: rgb(89, 87, 87);}
+.options{justify-self: center;display: flex;gap: 15px;}
+.options i{cursor: pointer;}
+
+#task-title-msg{
+    font-size: 11px;
+    color: red;
+}
